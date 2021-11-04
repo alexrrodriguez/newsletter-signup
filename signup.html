@@ -15,16 +15,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
 
   <body class="text-center">
-    <form class="form-signin">
+    <form action="/" method="post" class="form-signin">
       <img class="mb-4" src="image/favicon-32x32.png" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Signup for my Newsletter!</h1>
-      <input type="text" class="form-control top" placeholder="First Name" required autofocus>
-      <input type="text" class="form-control middle" placeholder="Last Name" required>
-      <input type="password" id="inputPassword bottom" class="form-control" placeholder="Email" required>
+      <input type="text" name="firstName" class="form-control top" placeholder="First Name" required autofocus>
+      <input type="text" name="lastName" class="form-control middle" placeholder="Last Name" required>
+      <input type="email" name="email" class="form-control bottom" placeholder="Email" required>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign me up!</button>
       <p class="mt-5 mb-3 text-muted">&copy; Alexander Rodriguez</p>
     </form>
