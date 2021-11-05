@@ -39,6 +39,11 @@ app.post("/", (req, res) => {
     auth: `alex1:${apikey}`,
   };
   const request = https.request(url, options, function (response) {
+    if (response.statusCode === 200) {
+      res.sendFile(__dirname + "/failure.html");
+    } else {
+      res.sendFile(__dirname + "/failure.html");
+    }
     response.on("data", function (data) {
       console.log(JSON.parse(data));
     });
